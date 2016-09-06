@@ -1,0 +1,204 @@
+a{
+	color: #3E78B0;
+}
+a:hover{
+	opacity: 0.6;
+}
+i{
+	vertical-align: middle;
+}
+img{
+	width: 100%;
+}
+.hr{
+	width: 100%;
+	margin: 8px auto 16px auto;
+	background-color: #eee;
+	height: 1px;
+}
+.btn{
+	background: #3E78B0;
+}
+nav{
+	background-color: #fff;
+}
+nav .brand-logo{
+	max-height: 100%;
+	height: 100%;
+	padding: 8px 24px;
+}
+nav .brand-logo img{
+	height: 100%;
+	width: auto;
+}
+nav ul a{
+	color: #777;
+}
+.button-collapse{
+	color: #777;
+}
+header{
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	min-height: 350px;
+	position: relative;
+	text-align: center;
+	padding: 16px 0;
+}
+header img{
+	height: 80px;
+	width: 80px;
+	position: relative;
+	margin-top: 16px;
+}
+header.page{
+	min-height: 100px;
+	background-position: center;
+}
+header.page > .page-header-title{
+	color: #fff;
+	text-align: left;
+	position: relative;
+	padding: 0 48px;
+}
+header > .header-mask{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.4);
+}
+.header-title{
+	position: relative;
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+}
+.header-description{
+	position: relative;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4em;
+}
+@media screen and (max-width: 600px){
+	.header-title{
+		font-size: 2em;
+	}
+	.header-description{
+		font-size: 1em;
+	}
+}
+.header-btn{
+	position: relative;
+	color: #fff;
+}
+footer.page-footer{
+	margin-top: 0;
+	background-color: #3E78B0;
+}
+.service{
+	padding: 40px 8px;
+}
+.service-icon{
+	text-align: center;
+}
+.service-icon > i{
+	font-size: 40px;
+	color: #3E78B0;
+}
+.service-title{
+	color: #777;
+	text-align: center;
+}
+.service-description{
+	color: #777;
+	text-align: center;
+	font-size: 1.2em;
+}
+.call-to-action{
+	background-color: #DFDFDF;
+	text-align: center;
+	min-height: 280px;
+	padding: 8px 0;
+	margin-top: 80px;
+}
+.call-to-action-title{
+	margin-top: 80px;
+	color: #3E78B0;
+}
+@media screen and (min-width: 600px){
+	.contact-info{
+		padding: 0px 8px 0px 8px;
+	}
+}
+@media screen and (max-width: 600px){
+	.contact-info ul{
+		margin: 0;
+	}
+}
+.contact-info ul li{
+	font-size: 1.4em;
+	padding: 8px 0;
+	color: #777;
+}
+.contact-info ul li i{
+	color: #3E78B0;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.top-bar{
+	background-color: #777;
+	color: #eee;
+	padding: 4px 0;
+}
+.top-bar-message{
+	padding: 0 48px;
+}
+.fb-icon{
+	background-image: url('../images/fbicon.png');
+	width: 1.4em;
+	height: 1.4em;
+	display: inline-block;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.line-icon{
+	background-image: url('../images/lineicon.png');
+	width: 1.4em;
+	height: 1.4em;
+	display: inline-block;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.app-img{
+	text-align: right;
+}
+.app-img img{
+	max-width: 350px;
+}
+.app{
+	padding: 0 24px;
+}
+.app-title{
+	color: #777;
+}
+.app-description{
+	color: #777;
+	font-size: 1.2em;
+	margin-bottom: 48px;
+}
+.app-description i{
+	color: #3E78B0;
+	margin-right: 8px;
+}
+.under-line-title{
+	margin-top: 16px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #eee;
+	padding: 8px 0;
+}

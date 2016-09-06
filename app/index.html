@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>瑞士藥局</title>
+    <meta name="description" content="瑞士藥局 您健康的好夥伴">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="stylesheets/main.css"/>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      var myCenter=new google.maps.LatLng(24.685444,120.877453);
+
+      function initialize()
+      {
+      var mapProp = {
+        center:myCenter,
+        zoom:16,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+      var marker=new google.maps.Marker({
+        position:myCenter,
+        });
+
+      marker.setMap(map);
+
+      var infowindow = new google.maps.InfoWindow({
+        content:"瑞士藥局在此為您服務!"
+        });
+
+      infowindow.open(map,marker);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <style type="text/css">
+    @media screen and (max-width: 600px){
+      .container{
+        padding: 48px 0;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4&appId=630424637093473";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- NavBar -->
+    <div class="top-bar">
+      <span class="top-bar-message">瑞士藥局 您健康的好夥伴</span>
+    </div>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="./index.html" class="brand-logo"><img src="./images/logo.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">〉首頁</a></li>
+          <li><a href="./contact.html">〉聯絡我們</a></li>
+          <li><a href="http://3p-page.blogspot.tw/" target="_blank">〉雲端藥局資訊平台</a></li>
+          <li><a href="http://line.me/ti/p/@tgm7349o">〉LINE 生活圈</a></li>
+          <li><a href="https://www.facebook.com/druglinplus" target="_blank">〉FB 藥物諮詢</a></li>
+          <!--<li><a href="#">〉桌布下載</a></li>-->
+          <li><a href="http://www.pcstore.com.tw/sasaya/" target="_blank">〉商店街</a></li>
+          <li><a href="./app.html">〉手機 APP 專區</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="./contact.html">聯絡我們</a></li>
+          <li><a href="http://3p-page.blogspot.tw/" target="_blank">〉雲端藥局資訊平台</a></li>
+          <li><a href="http://line.me/ti/p/@tgm7349o">〉LINE 生活圈</a></li>
+          <li><a href="https://www.facebook.com/druglinplus" target="_blank">FB 藥物諮詢</a></li>
+          <!--<li><a href="#">桌布下載</a></li>-->
+          <li><a href="http://www.pcstore.com.tw/sasaya/" target="_blank">商店街</a></li>
+          <li><a href="./app.html">手機 APP 專區</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar End -->
+    <header class="page">
+      <div class="header-mask"></div>
+        <h4 class="page-header-title">手機 APP 專區</h4>
+    </header>
+
+    <section id="wrapper">
+      <div class="container">
+        <div class="row">
+          <h5 class="under-line-title">手機 APP 專區</h5>
+          <div class="col m6 s12">
+            <div class="contact-info">
+              <h5 style="line-height: 40px; font-size: 20px;">會員來店內，並且出示瑞士藥局 app，即可以十元加購照片上顯示桌上 ( 手機 APP 會員加購十元商品區 ) 之任何商品其中一樣，每位會員一個月限購壹次，對於以上優惠內容以及會員定義，本藥局保有最終解釋權。
+(若圖示商品有缺，以現場商品為主)</h5>
+            </div>
+          </div>
+          <div class="col m6 s12">
+            <div class="contact-info">
+              <img src="./images/s123.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m12 s12" style="padding-bottom: 80px;">
+            <h5 class="under-line-title">APP 下載</h5>
+            <a href="https://play.google.com/store/apps/details?id=com.druglinclient" target="_blank"><button class="btn">Android Google Play 下載</button></a><br><br>
+            <a target="_blank" href="https://itunes.apple.com/tw/app/rui-shi-yao-ju/id1009096042?l=zh&mt=8"><button class="btn">IOS App Store 下載</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">連結</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="./index.html">〉首頁</a></li>
+              <li><a class="grey-text text-lighten-3" href="./contact.html">〉聯絡我們</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://3p-page.blogspot.tw/" target="_blank">〉雲端藥局資訊平台</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/druglinplus" target="_blank">〉FB 藥物諮詢</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">〉桌布下載(近期登場)</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://www.pcstore.com.tw/sasaya/" target="_blank">〉商店街</a></li>
+            </ul>
+          </div>
+          <div class="col l6 s12">
+            <h5 class="white-text">Facebook 粉絲頁</h5>
+            <p class="grey-text text-lighten-4"><div class="fb-page" data-href="https://www.facebook.com/druglinplus" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/druglinplus"><a href="https://www.facebook.com/druglinplus">瑞士藥局</a></blockquote></div></div></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Copyright 瑞士藥局
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".button-collapse").sideNav();
+      })
+    </script>
+  </body>
+</html>
+
